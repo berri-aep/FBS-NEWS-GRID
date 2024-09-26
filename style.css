@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --clr-dark: #2b2b2b;
+  --clr-light: #fff;
+  --clr-red: #e94e3a;
+  --clr-blue: #2c56a5;
+  --clr-green: #40b611;
+  --clr-orange: #d38209;
+  --h1: 90px;
+  --h2: 33px;
+  --h3: 24px;
+  --h4: 16px;
+  --h5: 12px;
+  --h6: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  color: var(--clr-dark);
+  font-family: var(--poppins);
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+  transition: 0.5s ease;
+}
+
+/* HEADER */
+.header{
+    padding: 2rem 0;
+}
+
+.header__title{
+    text-align: center;
+}
+
+.header__title h2{
+    font-size: var(--h2);
+    font-weight: 600;
+}
+
+.header__nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 2rem 0;
+}
+
+.header__nav--details{
+    display: flex;
+    gap: 5rem;
+}
+
+/* HOME BANNER*/
+
+.homeBanner__card{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+
+.homeBanner__card--a,.homeBanner__card--b, .homeBanner__card--c,.homeBanner__card--d{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    object-fit: cover;
+
+}
+.homeBanner__card--a{
+    grid-area: a;
+}
+
+.homeBanner__card--a h5{
+    font-size: var(--h5);
+    background-color: var(--clr-red);
+    color: var(--clr-light);
+    max-width: 8rem;
+    text-align: center;
+}
+
+.homeBanner__card--b{
+    grid-area: b;
+}
+
+.homeBanner__card--b h5{
+    font-size: var(--h5);
+    background-color: var(--clr-blue);
+    color: var(--clr-light);
+    max-width: 8rem;
+    text-align: center;
+}
+
+.homeBanner__card--c{
+    grid-area: c;
+}
+
+.homeBanner__card--c h5{
+    font-size: var(--h5);
+    background-color: var(--clr-green);
+    color: var(--clr-light);
+    max-width: 8rem;
+    text-align: center;
+}
+
+
+.homeBanner__card--d{
+    grid-area: d;
+}
+
+.homeBanner__card--d h5{
+    font-size: var(--h5);
+    background-color: var(--clr-orange);
+    color: var(--clr-light);
+    max-width: 8rem;
+    text-align: center;
+}
+
+.homeBanner__card--a img{
+    width: 70rem;
+}
+
+.homeBanner__card--b img{
+    width: 100%;
+    height: 31.5rem;
+    object-fit: cover;
+}
+.homeBanner__card--c img{
+    width: 36rem;
+    height: 20rem;
+}
+.homeBanner__card--d img{
+    width: 30rem;
+    height: 20rem;
+
+}
+
+.homeBanner__wrapper{
+    display: grid;
+    grid-template-areas: 
+    "a b b" 
+    "a c d" ;
+    gap: 1rem;
+}
+
+.homeBanner__card--details{
+    position: absolute;
+    padding: 1rem 1rem;
+}
+
+.homeBanner__card--details p{
+    color: var(--clr-light);
+}
