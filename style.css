@@ -485,7 +485,8 @@ img {
   display: grid;
   grid-template-columns: 108rem 1fr;
   gap: 0rem 2rem;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
 .oldNews__title{
@@ -513,15 +514,18 @@ img {
 
 .oldNews__sideCard1{
   padding-bottom: 2rem;
+  width: 20rem;
 }
 
  .oldNews__sideCard1 p{
   font-weight: 450;
+  width: 20rem;
+  font-size: 1.4rem;
 } 
 
 .oldNews__sideCard1 img{
-  width: 30rem;
-  height: 30rem;
+  width: 20rem;
+  height: 20rem;
   object-fit: cover;
 }
 
